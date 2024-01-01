@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <link href="tailwind.css"  rel="stylesheet" />
+    <style>
+      body { margin : 0}
+      div {text-align: left}
+
+      .flex.h-screen {
+        height: 97vh;
+      }
+
+      .navbar-nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
+      }
+      .navbar-nav li {
+        padding: 0 1rem;
+      }
+
+      .navbar-nav a {
+        color: black;
+        font-family: Georgia, Arial;
+      }
+
+      a:hover {
+        opacity: 0.5;
+      }
+    </style>
+</head>
+<body> 
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./data.html">DATA</a></li>
+        <li><a href="./about.html">ABOUT</a></li> 
+      </ul>
+    </div>
+    <div class="flex h-screen">
+      <div class="w-full" style="background-color:lightgray; padding-left:4%; padding-top:2%; font-family:Georgia, 'Times New Roman', Times, serif">
+        <h1 style="font-size:larger; text-decoration:underline;"><b>About Me:</b></h1>
+        <p>I am a math and computer science student at Princeton University. I love to learn new technologies by creating interesting projects.</p>
+       <h1 style="font-size:larger; text-decoration:underline;"><b>Find Me:</b></h1>
+       <a href="https://www.linkedin.com/in/kevin-jeon/" style="color:blue;"><em>LinkedIn</em></a>
+       <a href="https://github.com/kejerial" style="color:blue;"><em>Github</em></a>
+      </div>
+    </div>
+    
+
+</html>

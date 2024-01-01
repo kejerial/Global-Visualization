@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link href="tailwind.css"  rel="stylesheet" />
+    <style>
+      body { margin : 0}
+      div {text-align: center}
+
+      .flex.h-screen {
+        display: flex;
+        flex-direction: column;
+        height: 97vh;
+      }
+
+      .flex.h-screen > div:first-child {
+        flex: 1;
+      }
+      .flex.h-screen > div:last-child {
+        flex: 10; 
+      }
+
+      .navbar-nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
+      }
+      .navbar-nav li {
+        padding: 0 1rem;
+      }
+
+      .navbar-nav a {
+        color: black;
+        font-family: Georgia, Arial;
+      }
+      
+      a:hover {
+        opacity: 0.5;
+      }
+    </style>
+</head>
+<body> 
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./data.html">DATA</a></li> 
+        <li><a href="./about.html">ABOUT</a></li> 
+      </ul>
+    </div>
+    <div id="popUp" class="bg-black bg-opacity-75 fixed px-2 py-3 rounded-lg"> 
+      <h2 class="text-white text-sm">
+        <span id="name"></span>
+        <span id="type"></span>
+      </h2>
+      <p id="value" class="text-white text-lg font-bold"></p>
+    </div>
+
+    <div class="flex h-screen">
+      <div class="w-full" style="background-color:black">
+        <label for="stat-types" style="color:white">Choose a statistic:</label> 
+          <select name="stat-types" id="stat-types"> 
+              <option value="Agricultural Land (%)">Agricultural Land (%)</option> 
+              <option value="Land Area(Km2)">Land Area(Km2)</option> 
+              <option value="Armed Forces size">Armed Forces Size</option> 
+              <option value="Birth Rate">Birth Rate</option> 
+              <option value="Co2-Emissions">Co2-Emissions</option> 
+              <option value="CPI">CPI</option> 
+              <option value="CPI Change (%)">CPI Change (%)</option> 
+              <option value="Fertility Rate">Fertility Rate</option>
+              <option value="Forested Area (%)">Forested Area (%)</option> 
+              <option value="Gasoline Price">Gasoline Price</option> 
+              <option value="GDP">GDP</option> 
+              <option value="Gross primary education enrollment (%)">Gross Primary Education Enrollment (%)</option> 
+              <option value="Gross tertiary education enrollment (%)">Gross Tertiary Education Enrollment (%)</option>
+              <option value="Infant mortality">Infant Mortality</option> 
+              <option value="Life expectancy">Life Expectancy</option> 
+              <option value="Maternal mortality ratio">Maternal Mortality Ratio</option>
+              <option value="Minimum wage">Minimum Wage</option> 
+              <option value="Out of pocket health expenditure">Out of Pocket Health Expenditure (%)</option> 
+              <option value="Physicians per thousand">Physicians per Thousand</option> 
+              <option value="Population">Population</option> 
+              <option value="Population: Labor force participation (%)">Population: Labor Force Population (%)</option> 
+              <option value="Tax revenue (%)">Tax Revenue (%)</option>
+              <option value="Total tax rate">Total Tax Rate (%)</option>  
+              <option value="Unemployment rate">Unemployment Rate (%)</option> 
+              <option value="Urban_population">Urban Population</option> 
+          </select>
+      </div>
+      <div class="w-full" id="canvasContainer"> 
+        <canvas>  </canvas>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+    
+
+</html>

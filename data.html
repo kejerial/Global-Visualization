@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <link href="tailwind.css"  rel="stylesheet" />
+    <style>
+      body { margin : 0}
+      div {text-align: left}
+
+      .flex.h-screen {
+        height: 97vh;
+      }
+
+      .navbar-nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
+      }
+      .navbar-nav li {
+        padding: 0 1rem;
+      }
+
+      .navbar-nav a {
+        color: black;
+        font-family: Georgia, Arial;
+      }
+
+      a:hover {
+        opacity: 0.5;
+      }
+
+      ul {
+        list-style-type: disc;
+      }
+    </style>
+</head>
+<body> 
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./data.html">DATA</a></li>
+        <li><a href="./about.html">ABOUT</a></li> 
+      </ul>
+    </div>
+    <div class="flex h-screen">
+      <div class="w-full" style="background-color:lightgray">
+        <h1 style="padding-left:25px; padding-top:.5em; font-size:175%; text-decoration: underline;">
+            Overview of Dataset
+        </h1>
+        <p style="padding-left:30px">
+            The dataset used for this project is the <a style="color:blue" href="https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023">2023 Global Country Information Dataset</a> from Kaggle. The dataset contains information on all countries of the world, however some countries are missing certain informations. Additionally, due to the nature of the visual interface, only the numerical data are displayed. The variables are defined as follows: 
+        </p>
+        <ul style="padding-left:3%; padding-top:1%">
+            <li>Agricultural Land (%): Percentage of land area used for agricultural purposes.</li> 
+            <li>Land Area(Km2): Total land area of the country in square kilometers.</li> 
+            <li>Armed Forces Size: Size of the armed forces in the country.
+            </li> 
+            <li>Birth Rate: Number of births per 1,000 population per year.</li> 
+            <li>Co2-Emissions: Carbon dioxide emissions in tons.</li> 
+            <li>CPI: Consumer Price Index, a measure of inflation and purchasing power.</li> 
+            <li>CPI Change (%): Percentage change in the Consumer Price Index compared to the previous year.</li> 
+            <li>Fertility Rate: Average number of children born to a woman during her lifetime.</li>
+            <li>Forested Area (%):  Percentage of land area covered by forests.</li> 
+            <li>Gasoline Price: Price of gasoline per liter in local currency.</li> 
+            <li>GDP: Gross Domestic Product, the total value of goods and services produced in the country.</li> 
+            <li>Gross Primary Education Enrollment (%): Gross enrollment ratio for primary education.</li> 
+            <li>Gross Tertiary Education Enrollment (%): Gross enrollment ratio for tertiary education.</li>
+            <li>Infant Mortality: Number of deaths per 1,000 live births before reaching one year of age.</li> 
+            <li>Life Expectancy: Average number of years a newborn is expected to live.</li> 
+            <li>Maternal Mortality Ratio: Number of maternal deaths per 100,000 live births.</li>
+            <li>Minimum Wage: Minimum wage level in local currency.</li> 
+            <li>Out of Pocket Health Expenditure (%): Percentage of total health expenditure paid out-of-pocket by individuals.</li> 
+            <li>Physicians per Thousand: Number of physicians per thousand people.</li> 
+            <li>Population: Total population of the country.</li> 
+            <li>Population: Labor Force Population (%): Percentage of the population that is part of the labor force.</li> 
+            <li>Tax Revenue (%): Tax revenue as a percentage of GDP.</li>
+            <li>Total Tax Rate (%): Overall tax burden as a percentage of commercial profits.</li>  
+            <li>Unemployment Rate (%):  Percentage of the labor force that is unemployed.</li> 
+            <li>Urban Population: Percentage of the population living in urban areas.</li> 
+        </ul>
+      </div>
+    </div>
+    
+
+</html>
