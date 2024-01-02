@@ -23,7 +23,7 @@ group.add(globe);
 
 scene.add(group);
 
-camera.position.z
+camera.position.z = 15;
 
 // Creating stars for the background
 const starGeometry = new THREE.BufferGeometry()
