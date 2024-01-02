@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import gsap from 'gsap';
+import gsap from './node_modules/gsap';
 import countries from './countries.json';
 
 
