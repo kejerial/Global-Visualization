@@ -5,8 +5,6 @@ The dashboard features a 3D interactive globe you can rotate to view a selected 
 view the data for the selected feature. The dashboard also is visually interactive as the boxes representing each country are normalized in size to represent their relative amount
 compared to the global maximum. This dashboard may be used to compare and analyze the countries of world based on a statistic of interest such as birth rate, GDP, etc.
 
-Try the dashboard <a href="https://kejerial.github.io/Global-Visualization/index.html">here</a>!
-
 ## How It Works
 The sphere animations and interactive nature of the dashboard was implemented using <a href="https://threejs.org/">Three.js</a> 
 and <a href="https://tailwindcss.com/">Tailwind CSS</a>. Standard Javascript was used to interact with the HTML/CSS of the website.
